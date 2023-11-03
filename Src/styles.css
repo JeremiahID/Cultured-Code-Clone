@@ -2,5 +2,82 @@
     padding: 0px; 
     margin: 0px;
     box-sizing: content-box;
-    background-color: ;
+}
+
+body{
+    width: 100%;
+
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9dcdf7e;
+}
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.logo{
+    width: 10vw;
+    height: 7vh;
+    background-image: url("/Public/images/LogoNav.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+
+
+.logo:hover{
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    background-image: url("/Public/images/LogoNavHover.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+ }
+ 
+
+
+:where(.links) :is(a){
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #807c7c;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0.4rem;
+    margin: 1rem;
+}
+
+:where(.links) :is(a:hover){
+    background-color: #e4dfdf;
+   
+}
+
+
+.sectionOne{
+    height: 90vh;
+    background-color: #d9dcdf7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+:where(.hero) :is(img){
+    width: 20vw;
+}
+
+:where(.heroText) :is(h2){
+    font-family: calibri;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #8b8888;
 }
